@@ -1,0 +1,38 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.box input {
+    border-radius: 5rem;
+    padding: 1rem;
+    width: 30vw;
+    margin: 10px;
+    z-index: 0;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color:black;
+    font-weight: bold;
+}
+
+.box input ::-ms-input-placeholder {
+    color: black;
+    font-size: large;
+}
+
+.box button {
+    background-color: transparent;
+    position: absolute;
+    margin: 22px;
+    margin-left: 25vw;
+    outline: none;
+    border: white;
+}
+
+.naviSearch {
+    height: 75px;
+}
+
+

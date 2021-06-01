@@ -1,0 +1,13 @@
+<form class="contact-form"(ngSubmit)="sendEmail($event)">
+   
+    <input [hidden]=true type="text" name="user_name"[(ngModel)]="name">
+    
+    <input [hidden]=true type="email" name="user_email"[(ngModel)]="mail">
+    <textarea [hidden]=true name="message"[(ngModel)]="otp"></textarea>
+    <input type="submit"class="btn btn-dark btn-lg" value="Click here to verify">
+</form>
+<div *ngIf="enterotp">
+<h3>You must have received otp,please enter here to verify your email</h3>
+<input type="number"class="form-control"placeholder="enter otp"[(ngModel)]="enotp">
+<button (click)="validate()" class="btn btn-primary">verify</button>
+</div>

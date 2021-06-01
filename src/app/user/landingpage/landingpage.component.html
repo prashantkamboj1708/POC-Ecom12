@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shopingtime</a>
+  
+</div>
+</nav>
+  <div class="container">
+      <div class="row">
+        
+          <div class="col-lg"id="second">
+            <br>
+            <form [formGroup]="register"(ngSubmit)="addformdata()">
+                <div>
+                  <input type="text"class="form-control"placeholder="Name"formControlName="name">
+                  
+                </div>
+                <br>
+                <div>
+                  <input type="email"class="form-control"placeholder="Email"formControlName="email">
+                </div>
+                <br>
+                <div>
+                    <input type="text"class="form-control"placeholder="Address"formControlName="address">
+                  </div>
+                  <br>
+                  <div>
+                    <input type="number"class="form-control"placeholder="Id"formControlName="id">
+                  </div>
+                  <br>
+                  <div>
+                    <input type="Password"class="form-control"placeholder="Password"formControlName="password">
+                  </div>
+                  <br>
+                  <div>
+                    <input type="Password"class="form-control"placeholder="Confirm Password"formControlName="Cpassword">
+                    <span id="msg" *ngIf="incorrect">please enter correct password</span>
+                  </div>
+                  <br><div>
+                    <input (change)="file($event)"type="file"class="form-control">
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-primary"id="btn">Register</button>
+              </form>
+              <hr>
+              <span id="sp">Already a user?&nbsp;<button (click)="userlogin()" class="btn btn-secondary btn-sm">Login</button></span>
+          </div>
+      </div>
+</div> 
+ 

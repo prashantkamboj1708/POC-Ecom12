@@ -1,0 +1,312 @@
+{
+  "admin": {
+    "email": "admin@mail.com",
+    "password": "adminpass"
+  },
+  "users": [
+    {
+      "name": "Prashant Kamboj",
+      "email": "prashantkamboj1708@gmail.com",
+      "address": "house no. 253 dayanand colony model town7",
+      "id": 55,
+      "password": "123",
+      "Cpassword": "123",
+      "src": "assets/null",
+      "block": false,
+      "friends": [],
+      "requests": []
+    },
+    {
+      "name": "Prashant",
+      "email": "hk893009@gmail.com",
+      "address": "House no. 253 Dayanand colony",
+      "id": 77,
+      "password": "777",
+      "Cpassword": "777",
+      "src": "assets/null",
+      "block": false,
+      "friends": [],
+      "requests": []
+    },
+    {
+      "name": "Prashant Kamboj",
+      "email": "prashantkamboj1708@gmail.com",
+      "address": "house no. 253 dayanand colony model town7",
+      "id": 99,
+      "password": "101",
+      "Cpassword": "101",
+      "src": "assets/null",
+      "block": false,
+      "friends": [],
+      "requests": []
+    },
+    {
+      "name": "Prashant Kamboj",
+      "email": "prashantkamboj1708@gmail.com",
+      "address": "house no. 253 dayanand colony model town7",
+      "id": 10,
+      "password": "555",
+      "Cpassword": "555",
+      "src": "assets/null",
+      "block": false,
+      "friends": [],
+      "requests": []
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "productName": "liberty shoes",
+      "price": 1999,
+      "productDescription": "most comfortable shoes.",
+      "productImage": "../assets/shoes.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "productName": "dell laptop",
+      "price": 95000,
+      "productDescription": "best gaming laptop.",
+      "productImage": "../assets/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 14,
+      "productName": "jens",
+      "price": 1099,
+      "productDescription": "comfortable jens.",
+      "productImage": "../assets/lee.jpg",
+      "quantity": 0,
+      "category": "jens"
+    },
+    {
+      "id": 7,
+      "productName": "jersey",
+      "price": 35000,
+      "productDescription": "this is original leakers jersey.",
+      "productImage": "../assets/leakers.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 8,
+      "productName": "basket ball jorden",
+      "price": 7000,
+      "productDescription": "copy shoes",
+      "productImage": "../assets/bs.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 9,
+      "productName": "snikers",
+      "price": 500,
+      "productDescription": "sneakers ",
+      "productImage": "../assets/shoes.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 2,
+      "productName": "i Phone X",
+      "price": 90000,
+      "productDescription": " iPhone  ",
+      "productImage": "../assets/iphone.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 10,
+      "productName": "Floral  ",
+      "price": 4500,
+      "productDescription": "Floral Print Midi Dress",
+      "productImage": "../assets/fm.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 11,
+      "productName": "iphone 12",
+      "price": 100000,
+      "productDescription": "modarapido touch",
+      "productImage": "../assets/iphone.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 13,
+      "productName": "Nike Air Mag sneakers",
+      "price": 15000,
+      "productDescription": "nike Sneakers",
+      "productImage": "../assets/bs.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    {
+      "id": 15,
+      "productName": "air max",
+      "price": 9999,
+      "productDescription": "air max utempo best for dunk in basketball",
+      "quantity": 0,
+      "productImage": "./../assets/air.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 16,
+      "productName": "PUMA XRay Jr Dark Shad Lace-Up Casual Shoes",
+      "price": 3249,
+      "productDescription": "PUMA is one of the world’s leading Sports Brands",
+      "productImage": "./../assets/puma.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 17,
+      "productName": "remonds suits ",
+      "price": 3999,
+      "productDescription": "Smil fit",
+      "productImage": "./../assets/fm.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 18,
+      "productName": "lenevo",
+      "price": 7999,
+      "productDescription": "gaming laptop ",
+      "productImage": "./../assets/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    }
+  ],
+  "electronics": [
+    {
+      "id": 1,
+      "productName": "laptop",
+      "price": 28999,
+      "productDescription": "gaming laptop.",
+      "productImage": "./../assets/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "productName": "i Phone X",
+      "price": 91100,
+      "productDescription": "The iPhone is a smartphone developed by Apple ",
+      "productImage": "./../assets/iphone.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+  
+    {
+      "id": 5,
+      "productName": "Apple MacBook Pro 13-Inch",
+      "price": 90000,
+      "productDescription": "A controversial keyboard once present on every Apple laptop is now a thing of the past. ",
+      "productImage": "./../assets/mak.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 6,
+      "productName": "macbook",
+      "price": 99990,
+      "productDescription": "Apple iPad Pro 12.9-inch  ",
+      "productImage": "./../assets/mak.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    }
+  ],
+  "Cloths": [
+    {
+      "id": 7,
+      "productName": "Shirt",
+      "price": 2200,
+      "productDescription": "Regular fit",
+      "productImage": "./../assets/shirt.jpeg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 8,
+      "productName": "jens",
+      "price": 1599,
+      "productDescription": "1950s Vintage Style Simply jens",
+      "productImage": "./../assets/jk.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 9,
+      "productName": "T-shirT",
+      "price": 1399,
+      "productDescription": "Smil fit ",
+      "productImage": "./../assets/shirt.jpeg",
+      "category": "cloths"
+    },
+    {
+      "id": 10,
+      "productName": "track pants ",
+      "price": 1399,
+      "productDescription": "Dry fit",
+      "productImage": "./../assets/track.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 11,
+      "productName": "lee",
+      "price": 2999,
+      "productDescription": " Smil fit",
+      "productImage": "./../assets/lee.jpg",
+      "category": "cloths"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 13,
+      "productName": "Nike",
+      "price": 55000,
+      "productDescription": "Best",
+      "productImage": "./../assets/air.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    {
+      "id": 14,
+      "productName": "jordan",
+      "price": 12099,
+      "productDescription": "dunking shoes .",
+      "productImage": "./../assets/puma.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    
+    {
+      "id": 16,
+      "productName": "PUMA XRay",
+      "price": 8549,
+      "productDescription": "highly recomended shoes .",
+      "productImage": "./../assets/bs.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 17,
+      "productName": "casual",
+      "price": 3999,
+      "productDescription": "Smil fit",
+      "productImage": "./../assets/shoes.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 18,
+      "productName": "Puma ",
+      "price": 7999,
+      "productDescription": "most comfortable shoes ",
+      "productImage": "./../assets/puma.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    }
+  ]
+}

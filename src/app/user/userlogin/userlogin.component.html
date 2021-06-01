@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shopingtime</a>
+  
+</div>
+</nav>
+  <h1>User-Login</h1>
+  <div class="container shadow-lg p-3 mb-5 bg-body rounded">
+    <div id="login">
+      <br>
+      <br>
+      <input type="text" placeholder="email"[(ngModel)]="email"class="form-control"required>
+      <br>
+      <input type="password"placeholder="password"[(ngModel)]="password"class="form-control"required>
+      <br>
+      <button (click)="getuserdata()" class="btn btn-primary"(click)="homepage()">Login</button>
+      <br>      
+     
+    </div>
+  </div>

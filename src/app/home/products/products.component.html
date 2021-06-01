@@ -1,0 +1,243 @@
+<!-- nav bar -->
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shopingtime</a>
+        
+      </div>
+    </nav>
+    <nav class="thic" style="background: gray">
+        <label class="logo"></label>
+        <ul>
+            <li><a class="nav-link" (click)="home()"><span class="material-icons"> home </span>Home </a></li>
+            <li><a class="nav-link" (click)="productSec()"><span class="material-icons"> sell </span>Products</a> </li>
+            <li><a class="nav-link" (click)="cartSec()"><span class="material-icons"> shopping_cart </span>Cart </a>  </li>
+            <li><a class="nav-link" (click)="Logout()"><span class="material-icons"> login </span>Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- end nav bar -->
+    <!-- *ngIf="navii" -->
+   
+
+    <!-- products section -->
+    <div *ngIf="productsSection">
+        <div class="row">
+            <div class="col-3">
+                <div class="p-4 pt-4 cate">
+                    <a class="list-group-item caat" (click)="allproducts()">All Products</a>
+                    <a class="list-group-item caat" (click)="Electronics()">Electronics</a>
+                    <a class="list-group-item caat" (click)="Cloths()">Cloths</a>
+                    <a class="list-group-item caat" (click)="shoes()">Shoes</a>
+
+                </div>
+
+                <div [(ngSwitch)]="value">
+                    <div *ngSwitchCase="1"></div>
+                    <div *ngSwitchCase="2"></div>
+                    <div *ngSwitchCase="3"></div>
+                    <div *ngSwitchCase="4"></div>
+                </div>
+            </div>
+
+            <div class="col-7" *ngIf="view">
+                <div [(ngSwitch)]="value2">
+                    <div *ngSwitchCase="1">
+                        <!-- <button class="btn btn-primary">Filter</button> -->
+                        <div class="row pt-4" *ngIf="visible">
+
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of allProduct ">
+                                <div class="card h-100">
+                                    <a><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a>{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="2">
+                        <div class="row" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of electro ">
+                                <div class="card h-100">
+                                    <a href="#!"><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a href="#!">{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="3">
+                        <div class="row" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of cloth ">
+                                <div class="card h-100">
+                                    <a href="#!"><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a href="#!">{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="4">
+                        <!-- <button class="btn btn-primary">Filter</button> -->
+                        <div class="row pt-4" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of shoe ">
+                                <div class="card h-100">
+                                    <a><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a>{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ******************************************************* -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- add to cart section -->
+    <div *ngIf="cartSection">
+
+        <h2 class="count">
+            Cart (<span>{{ count }}</span> items)
+        </h2>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <!-- *ngFor="let i of displayInCart" -->
+                                <tr>
+
+                                    <th scope="col">Image</th>
+                                    <th scope="col">productName</th>
+                                    <th scope="col">Available</th>
+                                    <th scope="col" class="text-center">Quantity</th>
+                                    <th scope="col" class="text-right">Price</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let i of displayInCart">
+                                    <td><img src={{i.productImage}} width="60px" height="60px" /> </td>
+                                    <td>{{i.productName}}</td>
+                                    <td>In stock</td>
+                                    <td><input class="form-control" type="text" value="1" [(ngModel)]="inputQyt" /></td>
+                                    <td class="text-right">&#8377; {{i.price}}</td>
+                                    <!-- <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button> </td> -->
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sub-Total</td>
+                                    <td class="text-right">0000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Shipping</td>
+                                    <td class="text-right">0000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><strong>Total</strong></td>
+                                    <td class="text-right"><strong>0000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 text-center">
+                            <form id="f1" (ngSubmit)="checkOutMail($event)" class="my-3">
+
+                                <label class="form-label my-0" [hidden]="true">Email</label>
+                                <input class="form-control" [hidden]="true" type="email" readonly placeholder="Enter your Email" name="user_email" [(ngModel)]="mail" required>
+                                <label [hidden]="true">Message</label>
+                                <input [hidden]="true" name="message" readonly [(ngModel)]="inputOtp">
+
+                                <label [hidden]="true">Something</label>
+                                <input [hidden]="true" name="to_name" readonly [(ngModel)]="someName"><br>
+
+                                <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                            </form>
+                            <div *ngIf="check">
+                                <img src='../../../assets/th.png'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- logout sectionn -->
+    <div *ngIf="LogoutSection">
+        <div class="col-sm-12 col-md-6 text-center">
+            <button class="btn btn-lg btn-block btn-success text-uppercase">Logout</button>
+        </div>
+
+
+    </div>
+</body>

@@ -1,0 +1,32 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.navbar-brand img{
+    border-radius: 50%;
+}
+.container{
+    margin-top: 100px;
+    width: 20%;
+    
+    height:250px;
+    border-radius: 10%;
+}
+.form-control{
+    background-color: rgb(206, 201, 178);
+}
+h1{
+    text-align: center;
+}
+.login{
+    margin-top: 20px;
+}
+button{
+    margin-left:90px;
+}
+.card-body{
+    background-color: rgb(145, 147, 149);
+}
+span{
+    color: red;
+}
+.contact-form{
+    margin-left: 670px;
+}

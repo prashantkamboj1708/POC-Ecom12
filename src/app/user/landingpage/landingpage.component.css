@@ -1,0 +1,48 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.navbar-brand img{
+    border-radius: 50%;
+}
+.container{
+    height: max-content;  
+    width: 600px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+#first{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+input{
+    text-align: center;
+   
+}
+.form-control{
+    width:55%;
+    margin-left: 130px;
+    background-color: rgb(224, 229, 230);
+   
+}
+#btn{
+    margin-left:238px;
+}
+#second{
+margin-top: 10px;
+background-color: rgb(166, 169, 172);
+}
+#sp{
+    margin-left: 190px;
+    position: relative;
+    bottom: 10px;
+}
+
+nav{
+    background-color:black;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    
+}
